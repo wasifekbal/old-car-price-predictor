@@ -1,0 +1,47 @@
+
+
+@media screen and (max-width: 850px) {
+    h2.mod {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 600px) {
+    h2.mod {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 450px) {
+    h2.mod {
+        font-size: 15px;
+    }
+    h5 {
+        font-size: 17px;
+    }
+
+}
+@media screen and (max-width: 390px) {
+    h2.mod {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 390px) {
+    h4.price {
+        font-size: 16px;
+    }
+}
+
+.{
+    margin: 0px;
+    padding: 0px;
+}
+    
+body{
+    background-color: #e3f2fd;"
+}
+
+a.btn{
+    color:black;
+}
+.btn:hover{
+    background-color: blue;
+}

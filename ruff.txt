@@ -1,0 +1,30 @@
+#print(render_template('index.html',car_models=car_models,companies=companies,length=l,yrs=yrs,fuel_type=fuel_type))
+
+
+# Selling price of your car : ₹ 1502512
+'''
+        <div id="content"></div>
+
+<script>const xhr=new XMLHttpRequest();const content=document.getElementById('content');xhr.onload=function(){if(this.status==200){content.innerHTML=xhr.responseText;}else{console.warn('Failed to load !!');}};xhr.open('get', '/Efrn4bN7YDhU2p4stLMBmbTUquwak572hmDv8yLJXhVEdZ2sGBtQLHSfHmcj5yyxQYwcKExCfre5fJSQ9muZkQvZDZWduM5HVsNJdpkfpCUSqRjSVQs9VNWhttcvvmcbBwdkNtEyU2UDvF6q95L4cYqwRPZVLSL9SS779NHARsnV72ymwpT39BSavgtwvAdQRtftqShCqFhsh2HsfyAYMphsPyrWpVbWnt4fE4f2zg2zWJuMaUQJTmp9nupCzYdq');xhr.send();</script>
+
+<script>
+    function render_car_models(company_id, model_id) {
+        var company = document.getElementById(company_id);
+        var model = document.getElementById(model_id);
+        console.log(company.value);
+        model.value = "";
+        model.innerHTML = "";
+        {% for i in length %}
+        if (company.value == "{{ companies[i] }}") {
+            {% for x in car_models[i] %}
+            var newOption = document.createElement("option");
+            newOption.value = "{{ x }}";
+            newOption.innerHTML = "{{ x }}";
+            model.options.add(newOption);
+            {% endfor %}
+        }
+        {% endfor %}
+    };
+</script>
+
+'''
